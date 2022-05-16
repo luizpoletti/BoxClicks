@@ -1,0 +1,16 @@
+###########################################
+#                                         #
+#      Developer: LuizBebe840#9887        #
+#                                         #
+###########################################
+
+# Command | Permission
+
+# /clicks           | Sem permissao
+# /clicks help      | Sem permissao
+# /clicks top       | Sem permissao
+# /clicks shop      | Sem permissao
+# /clicks see       | Sem permissao
+# /clicks add       | box.clicks.admin
+# /clicks set       | box.clicks.admin
+# /clicks remove    | box.clicks.admin

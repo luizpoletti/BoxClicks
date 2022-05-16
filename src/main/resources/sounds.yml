@@ -1,0 +1,25 @@
+###########################################
+#                                         #
+#      Developer: LuizBebe840#9887        #
+#                                         #
+###########################################
+
+Invalid-Number: VILLAGER_NO
+No-Permission: VILLAGER_NO
+Offline-Player: VILLAGER_NO
+
+Incorrect-Usage: NOTE_PLING
+
+Clicks:
+  Added: NOTE_STICKS
+  Setted: NOTE_STICKS
+  Removed: NOTE_STICKS
+  See: ORB_PICKUP
+
+Shop:
+  No-Clicks: NOTE_PLING
+  Successful-Purchase: LEVEL_UP
+
+Open-Inventories: CLICK
+
+Command-List: ORB_PICKUP

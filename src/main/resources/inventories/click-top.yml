@@ -1,0 +1,19 @@
+###########################################
+#                                         #
+#      Developer: LuizBebe840#9887        #
+#                                         #
+###########################################
+
+Inventory:
+  Title: "Clicks TOP"
+  Size: 4
+  Allowed-Slots: [10, 11, 12, 13, 14, 15, 16, 21, 22, 23, 24]
+
+Icon:
+  Name: "&6&lTOP &8» &e{pos}º"
+  Lore:
+    - ""
+    - " &e➤ &fJogador: &a{player}"
+    - " &e➤ &fClicks: &e©{clicks}"
+    - " &e➤ &fPosição: &7{pos}º"
+    - ""

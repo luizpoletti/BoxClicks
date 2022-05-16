@@ -1,0 +1,53 @@
+###########################################
+#                                         #
+#      Developer: LuizBebe840#9887        #
+#                                         #
+###########################################
+
+Invalid-Number: "&cDigite um número válido!"
+No-Permission: "&cVocê não tem permissão para isto!"
+Offline-Player: "&cEste jogador não está online!"
+
+Incorrect-Usage: "&cUtilize: /<usage>"
+
+Clicks:
+  Added: "&7Você &fadicionou &e©{amount} &7cliques a conta do jogador &e{player}&7!"
+  Setted: "&7Você &fdefinou &7os cliques da conta do jogador &e{player} &7para &e©{amount}&7!"
+  Removed: "&7Você &fremoveu &e©{amount} &7cliques da conta do jogador &e{player}&7!"
+  See:
+    - ""
+    - "&eO jogador &f{player} &etem um total de: &e©&f{clicks} &eclicks"
+    - ""
+
+Shop:
+  No-Clicks: "&cVocê não tem clicks o suficiente para comprar {item-name}&7!"
+  Successful-Purchase:
+    - ""
+    - "&fItem {item-name} &fcomprado com &asucesso&f!"
+    - "&fCusto: &e©{price}"
+    - ""
+
+Command-List:
+  Player:
+    - ""
+    - "&6&lCLICKS &8» &eComandos"
+    - ""
+    - " &e/clicks &8» &7Abrir o menu de cliques"
+    - " &e/clicks help &8» &7Ver esta mensagem"
+    - " &e/clicks top &8» &7Ver TOP 10 Clickers"
+    - " &e/clicks shop &8» &7Loja de cliques"
+    - " &e/clicks see <player> &8» &7Ver cliques de outro jogador"
+    - ""
+  Admin:
+    - ""
+    - "&6&lCLICKS &8» &eComandos"
+    - ""
+    - " &e/clicks &8» &7Abrir o menu de cliques"
+    - " &e/clicks help &8» &7Ver esta mensagem"
+    - " &e/clicks top &8» &7Ver TOP 10 Clickers"
+    - " &e/clicks shop &8» &7Loja de cliques"
+    - " &e/clicks see <player> &8» &7Ver cliques de outro jogador"
+    - " &c/clicks add <player> <amount> &8» &7Adicionar cliques a conta de um jogador"
+    - " &c/clicks set <player> <amount> &8» &7Definir quantia de cliques de um jogador"
+    - " &c/clicks remove <player> <amount> &8» &7Remover cliques da conta de um jogador"
+    - ""

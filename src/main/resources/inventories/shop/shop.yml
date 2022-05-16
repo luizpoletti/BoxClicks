@@ -1,0 +1,49 @@
+###########################################
+#                                         #
+#      Developer: LuizBebe840#9887        #
+#                                         #
+###########################################
+
+Inventory:
+  Title: "Clicks - Shop"
+  Size: 3
+  Allowed-Slots: [11, 12, 13, 14, 15]
+
+Categories: # Crie quantas quiser
+  category1:
+    Inventory:
+      Title: "Categoria  - Limites"
+      Size: 4
+      Allowed-Slots: [10, 11, 12, 13, 14, 15, 16, 20, 21, 22, 23, 24]
+    Icon:
+      Name: "&6&lCATEGORIA &8» &eLimites"
+      Lore:
+        - ""
+        - "&fNesta &ecategoria &fvocê encontrará"
+        - "&alimites &fde compra!"
+        - ""
+        - " &8☰ &aClique para entrar"
+        - ""
+      Custom-Skull: true
+      Skull-URL: "2d5b58d6e7d4cd987d081b91efe09ee0d2078f0db43f50d0a6cf3b32770aea4f"
+      Material: "PAPER:0:true" # Material : Data : Glow
+    Permission: "box.categories.limites" # Permissao para ver a categoria
+    Items: # Coloque quantos quiser
+      1:
+        Icon:
+          Name: "&6&lLIMITE &8» &eSpawners"
+          Lore:
+            - ""
+            - "&fCompre e receba &a3 &flimites de &e30&f!"
+            - ""
+            - " &e➤ &fPreço: &e©{price}"
+            - ""
+            - " &8☰ &aClique para comprar"
+            - ""
+          Custom-Skull: false
+          Skull-URL: "a7ed66f5a70209d821167d156fdbc0ca3bf11ad54ed5d86e75c265f7e5029ec1"
+          Material: "PAPER:0:true"
+          Amount: 3
+        Price: 5 # Preço em clicks
+        Commands: # Adicione quantos quiser
+          - "givelimite {player} 30 3"

@@ -1,0 +1,50 @@
+###########################################
+#                                         #
+#      Developer: LuizBebe840#9887        #
+#                                         #
+###########################################
+
+Inventory:
+  Title: "Clicks"
+  Size: 4
+
+Click-Icon:
+  Name: "&6&lCLICK"
+  Lore:
+    - ""
+    - "&fSeus cliques: &e©{clicks}"
+    - ""
+    - " &8☰ &aClique para aumentar"
+    - ""
+  Custom-Skull: false
+  Skull-URL: "43c03fd66dcfd4e051c1be9059930d7ea2076be8ce7e08f619bb6d88520add73"
+  Material: "GOLD_INGOT:0:false" # Material : Data : Glow
+  Slot: 11
+
+TOP-Icon:
+  Name: "&6&lTOP CLICKS"
+  Lore:
+    - ""
+    - "&fVeja os &aTOP 10 &fjogadores"
+    - "&fcom mais &ecliques &fno servidor!"
+    - ""
+    - " &8☰ &aClique para ver"
+    - ""
+  Custom-Skull: true
+  Skull-URL: "2e5793f0cc40a9368252714bc5263a5c3df2233bddf8a57e3d8d3f54af6726c"
+  Material: "ENDER_CHEST:0:false"
+  Slot: 14
+
+Shop-Icon:
+  Name: "&6&lCLICKS SHOP"
+  Lore:
+    - ""
+    - "&fDê uma utilidade a seus &ecliques"
+    - "&fcomprando itens em troca deles!"
+    - ""
+    - " &8☰ &aClique para comprar"
+    - ""
+  Custom-Skull: true
+  Skull-URL: "c390eede381bb8447f7d72e15b56347683e02c17c9b8fc6becd726f0a52c7fc1"
+  Material: "CHEST:0:false"
+  Slot: 15

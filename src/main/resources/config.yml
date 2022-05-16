@@ -1,0 +1,52 @@
+###########################################
+#                                         #
+#      Developer: LuizBebe840#9887        #
+#                                         #
+###########################################
+
+MySQL:
+  Enable: false
+  Host: "localhost:3306"
+  User: "root"
+  DB: "admin"
+  Password: ""
+
+Prefix:
+  Enable: true
+  Model: "&6&lCLICKS &8➜"
+
+Settings:
+  Count-Hits: true # Caso false, hits em players/mobs nao contabilizarao
+
+Format-Numbers:
+  - ''
+  - 'K'
+  - 'M'
+  - 'B'
+  - 'T'
+  - 'Q'
+  - 'QQ'
+  - 'S'
+  - 'SS'
+  - 'OC'
+  - 'N'
+  - 'D'
+  - 'UN'
+  - 'DD'
+  - 'TR'
+  - 'QR'
+  - 'QD'
+  - 'SD'
+  - 'SPD'
+  - 'OD'
+  - 'ND'
+  - 'VG'
+  - 'UVG'
+  - 'DVG'
+  - 'TVG'
+  - 'QTV'
+  - 'STV'
+  - 'SPV'
+  - 'OVG'
+  - 'NVG'
+  - 'TG'
