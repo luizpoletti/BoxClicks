@@ -24,8 +24,10 @@ public class SetClickCommand {
     @Command(name = "clicks.set", aliases = {"setar", "definir"}, usage = "clicks set <player> <amount>", async = true)
     public void setClickCommand(BukkitContext context) {
         val sender = context.getSender();
-        val args = context.getArgs();
+        if (!TangramUtils.hasPermission(sender, "box.clicks.admin"))
+            return;
 
+        val args = context.getArgs();
         val target = Bukkit.getPlayer(args[0]);
         if (!TangramUtils.playerIsOnline(sender, target))
             return;

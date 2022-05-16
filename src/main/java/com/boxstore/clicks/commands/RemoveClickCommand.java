@@ -24,8 +24,10 @@ public class RemoveClickCommand {
     @Command(name = "clicks.remove", aliases = {"remover", "retirar"}, usage = "clicks remove <player> <amount>", async = true)
     public void removeClickCommand(BukkitContext context) {
         val sender = context.getSender();
-        val args = context.getArgs();
+        if (!TangramUtils.hasPermission(sender, "box.clicks.admin"))
+            return;
 
+        val args = context.getArgs();
         val target = Bukkit.getPlayer(args[0]);
         if (!TangramUtils.playerIsOnline(sender, target))
             return;

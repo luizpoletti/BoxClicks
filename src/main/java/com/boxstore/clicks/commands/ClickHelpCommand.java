@@ -20,7 +20,7 @@ public class ClickHelpCommand {
     }
 
     @Command(name = "clicks.help", aliases = {"ajuda", "comandos", "commands"}, target = CommandTarget.PLAYER, async = true)
-    public void clicksTOPCommand(BukkitContext context) {
+    public void clickHelpCommand(BukkitContext context) {
         val sender = context.getSender();
         if (sender.hasPermission("box.clicks.admin"))
             messages.getAdminCommandList().forEach(sender::sendMessage);

@@ -24,8 +24,10 @@ public class AddClickCommand {
     @Command(name = "clicks.add", aliases = {"adicionar", "give"}, usage = "clicks add <player> <amount>", async = true)
     public void addClickCommand(BukkitContext context) {
         val sender = context.getSender();
-        val args = context.getArgs();
+        if (!TangramUtils.hasPermission(sender, "box.clicks.admin"))
+            return;
 
+        val args = context.getArgs();
         val target = Bukkit.getPlayer(args[0]);
         if (!TangramUtils.playerIsOnline(sender, target))
             return;
