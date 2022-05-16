@@ -17,7 +17,6 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
-import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 
 public class ClickTOPInventory {
@@ -33,17 +32,19 @@ public class ClickTOPInventory {
     public void open(Player player) {
         val items = new ArrayList<ItemStack>();
 
-        AtomicReference<List<String>> lore = new AtomicReference<>(topInventory.getLore());
+        List<String> lore = topInventory.getLore();
         val position = new AtomicInteger(1);
-        UserDAO.getUsers().stream().sorted(Comparator.comparingDouble(User::getClicks).reversed()).limit(10).forEach(users -> {
-            val players = users.getPlayer();
-            lore.set(lore.get().stream().map(l -> l.replace("{player}", players.getName()).replace("{clicks}", Format.formatNumber(users.getClicks())).replace("{pos}", "" + position.get())).collect(Collectors.toList()));
+        val topUsers = UserDAO.getUsers().stream().sorted(Comparator.comparingDouble(User::getClicks).reversed()).limit(10).collect(Collectors.toList());
 
-            val icon = new ItemBuilder(TangramUtils.getPlayerHead(players.getName())).setName(topInventory.getName().replace("{pos}", "" + position.get())).setLore(lore.get()).build();
+        for (val users : topUsers) {
+            val players = users.getPlayer();
+            lore = lore.stream().map(l -> l.replace("{player}", players.getName()).replace("{clicks}", Format.formatNumber(users.getClicks())).replace("{pos}", "" + position.get())).collect(Collectors.toList());
+
+            val icon = new ItemBuilder(TangramUtils.getPlayerHead(players.getName())).setName(topInventory.getName().replace("{pos}", "" + position.get())).setLore(lore).build();
 
             items.add(icon);
             position.getAndIncrement();
-        });
+        }
         val scroller = new ScrollerBuilder().withName(topInventory.getTitle()).withSize(topInventory.getSize()).withAllowedSlots(topInventory.getAllowedSlots()).withItems(items).build();
         scroller.open(player);
 

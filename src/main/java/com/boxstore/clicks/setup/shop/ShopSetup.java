@@ -43,6 +43,7 @@ public class ShopSetup {
 
             val icon = key.getBoolean("Icon.Custom-Skull") ? skull : item;
 
+            val category = new ShopCategory(icon, title, permission, new ArrayList<>(), allowedSlots, size);
             for (val itemPath : key.getConfigurationSection("Items").getKeys(false)) {
                 val itemKey = key.getConfigurationSection("Items." + itemPath);
 
@@ -64,14 +65,9 @@ public class ShopSetup {
                 val itemIcon = itemKey.getBoolean("Icon.Custom-Skull") ? itemSkull : itemDefault;
 
                 val shopItem = new ShopItem(itemIcon, itemCommands, itemPrice);
-
-                val shopItems = new ArrayList<ShopItem>();
-                shopItems.add(shopItem);
-
-                val category = new ShopCategory(icon, title, permission, shopItems, allowedSlots, size);
-                ShopDAO.getShopCategories().add(category);
+                category.getShopItems().add(shopItem);
             }
-
+            ShopDAO.getShopCategories().add(category);
         }
 
     }
