@@ -3,7 +3,7 @@ package com.boxstore.clicks.data.user;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
+import org.bukkit.OfflinePlayer;
 
 import java.util.UUID;
 
@@ -14,8 +14,8 @@ public class User {
     private UUID uuid;
     private double clicks;
 
-    public Player getPlayer() {
-        return Bukkit.getPlayer(uuid);
+    public OfflinePlayer getPlayer() {
+        return Bukkit.getOfflinePlayer(uuid);
     }
 
     public boolean hasClicks(double amount) {
